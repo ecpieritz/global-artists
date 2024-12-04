@@ -1,0 +1,14 @@
+@import './abstracts/variables';
+@import './base/reset';
+@import './base/typography';
+@import './components/navbar';
+@import './components/sidebar';
+@import './components/about';
+@import './components/professionalHistory';
+@import './components/projects';
+@import './pages/home';
+
+// Global style
+body {
+  font-family: $font-family-base;
+}
