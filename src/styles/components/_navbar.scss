@@ -1,0 +1,48 @@
+@import '../abstracts/variables';
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  background-color: $grey-lighter;
+  border-radius: 8px;
+  width: 100%;
+  margin: auto auto 24px;
+  gap: 2%;
+  padding: 5px;
+  
+  .nav-item {
+    background-color: transparent;
+    border: none;
+    color: $primary;
+    cursor: pointer;
+    width: 33%;
+    font-size: 14px;
+    padding: 17px 26px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      font-weight: 600;
+    }
+
+    .nav-icon {
+      margin-right: 16px;
+    }
+    
+    &.active {
+      background-color: $bg-color;
+      font-weight: 700;
+      color: $primary;
+    }
+  }
+}
+
+@media (max-width: 680px) {
+  .navbar {
+    width: 100%;
+    margin: 0 0 20px;
+  }
+}
