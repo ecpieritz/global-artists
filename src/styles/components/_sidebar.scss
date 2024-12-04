@@ -1,0 +1,84 @@
+@import '../abstracts/variables';
+
+.sidebar {
+  width: 550px;
+  height: calc(100vh - 64px);
+  position: fixed;
+  background-color: $primary-light;
+  padding: 40px;
+  border-radius: 16px;
+  background-image: url("/images/dev.png"); 
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  
+  h1{
+    color: $text-color;
+  }
+
+  h4 {
+    color: $text-color;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    margin-bottom: 16px;
+
+    .dev-img {
+      width: 40%;
+      height: 40%;
+      border-radius: 16px;
+    }
+
+    .info {
+      p {
+        font-size: $font-size-sm;
+        color: $text-color;
+        margin-bottom: 16px;
+      }
+
+      .row {
+        align-items: center;
+      }
+
+      .info-link {
+        color: $text-color;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 680px) {
+  .sidebar {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-image: none; 
+    .row {
+      flex-direction: column;
+
+      .dev-img {
+        width: 100%;
+      }
+
+      .info {
+        .row {
+          flex-direction: row;
+        }
+      }
+    }
+  }
+}
+
+@media(max-height: 850px) {
+  .sidebar {
+    background-size: 50%; 
+  }
+}

@@ -12,8 +12,10 @@ const Home = () => {
   return (
     <div className="app">
       <Sidebar />
+
       <main className="main-content">
         <Navbar activeTab={activeTab} setActiveTab={setActiveTab} />
+        
         <div className="content">
           {activeTab === "about" && <About />}
           {activeTab === "professional-history" && <ProfessionalHistory />}

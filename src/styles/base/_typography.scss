@@ -3,7 +3,7 @@ body {
   font-family: $font-family-base;
   font-size: $font-size-base;
   line-height: 1.5;
-  color: $primary;
+  color: $text-color;
 }
 
 // Headers
@@ -14,17 +14,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 32px;
-}
-
-h2 {
   font-size: 28px;
 }
 
-h3 {
+h2 {
   font-size: 24px;
 }
 
-h4 {
+h3 {
   font-size: 20px;
+}
+
+h4 {
+  font-size: 18px;
 }
